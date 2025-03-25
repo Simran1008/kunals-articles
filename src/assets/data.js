@@ -1,10 +1,11 @@
-
-    export const articles = [
-        {
-            "id": 1,
-            "title": "DOCTRINE OF SEPERABILITY UNDER ARBITRATION AND DIFFERENCE BETWEEN THE SAID DOCTRINE AND THE DOCTRINE OF KOMPETENZ-KOMPETENZ",
-            "image": "images/article1.jpg",
-            "content": " <b><u>INTRODUCTION</u></b><br><br> \
+export const articles = [
+  {
+    id: 1,
+    title:
+      "DOCTRINE OF SEPERABILITY UNDER ARBITRATION AND DIFFERENCE BETWEEN THE SAID DOCTRINE AND THE DOCTRINE OF KOMPETENZ-KOMPETENZ",
+    image: "images/article1.jpg",
+    content:
+      " <b><u>INTRODUCTION</u></b><br><br> \
                         Fundamentally, the arbitration agreement plays a prominent role in determination of the jurisdiction of the arbitral tribunal. \
                         Herein, the concepts of Kompetenz-Kompetenz and Separability not play a prominent role in protecting and promoting the rights of the parties to arbitration but also are considered extremely important in terms of international arbitration as they form the basis of the applicability, jurisdiction and functioning of the arbitral tribunal. <br><br><br>\
                         \
@@ -27,14 +28,15 @@
                         Furthermore, in the case of <b>Harbour Assurance Co Limited v. Kansa General International Insuarance</b>, it was rendered that the main contract as well as obligation to arbitrate are separate and distinct and herein the arbitrators in principle have the power to determine the jurisdiction of the tribunal. <br><br><br> \
                         \
                         <b><u>CONCLUSION</u></b><br><br> \
-                        Principally, it can be concluded that on one hand, the concept of separability preserves the autonomy of the arbitration agreement from the main contract, while, on the other hand, the concept of kompetenz-konpetenz gives power to the arbitral tribunal to rule on its own jurisdiction. Hence, they come at different stages of arbitration and are not similar to one another although they both originate from the modern liberal laws on arbitration.  "
-
-        },
-        {
-            "id": 2,
-            "title": "EXTENSION OF ARBITRATION AGREEMENT TO NON-SIGNATORY PARTIES IN ORDER TO FACILITATE MULTI-CONTRACT, MULTI-ACTION AND MULTI-PARTY ARBITRATIONS",
-            "image": "images/article2.jpg",
-            "content": "<b>INTRODUCTION</b> \
+                        Principally, it can be concluded that on one hand, the concept of separability preserves the autonomy of the arbitration agreement from the main contract, while, on the other hand, the concept of kompetenz-konpetenz gives power to the arbitral tribunal to rule on its own jurisdiction. Hence, they come at different stages of arbitration and are not similar to one another although they both originate from the modern liberal laws on arbitration.  ",
+  },
+  {
+    id: 2,
+    title:
+      "EXTENSION OF ARBITRATION AGREEMENT TO NON-SIGNATORY PARTIES IN ORDER TO FACILITATE MULTI-CONTRACT, MULTI-ACTION AND MULTI-PARTY ARBITRATIONS",
+    image: "images/article2.jpg",
+    content:
+      "<b>INTRODUCTION</b> \
                         <br><br> \
                         Arbitration can be fundamentally enumerated as a method of dispute resolution under the Alternate Dispute Resolution mechanism wherein parties mutually agree to refer all or any of the disputes arising out of their contractual relationship to arbitration. Herein, the award which is rendered by the Arbitral Tribunal is binding on the parties. \
                         Fundamentally, it is a method for settling disputes that sits outside the court. Martin Domke defines arbitration as voluntarily referring to a dispute to a third party selected by them for decision based on evidence and arguments, presented before the arbitration tribunal and the award of the arbitrator is final and binding. \
@@ -65,37 +67,49 @@
                         <b>CONCLUSION</b> \
                         <br><br> \
                         Thus, fundamentally, multi-party arbitration has a series of advantages associated with it, one of which, is reducing the multiplicity of proceedings wherein the subject matter of the dispute involved is same in nature. However, the said advantages must not be achieved at the expense of the principle of party autonomy, which is core and central to the process of arbitration. \
-                        Herein, although the latest ICC Arbitration Rules 2021, stipulate factors such as impact of the joinder of third-party on the arbitration procedure, but does not emphasise the mandate of consent of the other parties involved. Therefore, it is essential to protect and uphold the principle of party autonomy for the effective conduct of arbitration. "
-        },
-        {
-            "id": 3,
-            "title": "LAW GOVERNING THE ARBITRATION CLAUSE",
-            "image": "images/article3.jpg",
-            "content": "wqijbhubcqhebj"
-        },
-        {
-            "id": 4,
-            "title": "THE IBA RULES ON THE TAKING OF EVIDENCE AND RULES OF ARBITRAL INSTITUTIONS ON DOCUMENT PRODUCTION, EXPERT WITNESS AND FACTUAL WITNESS",
-            "image": "images/article4.jpg",
-            "content": "wqijbhubcqhebj"
-        },
-        {
-            "id": 5,
-            "title": "ARBITRATBILITY OF DISPUTES",
-            "image": "images/article5.jpg",
-            "content": "wqijbhubcqhebj"
-        },
-        {
-            "id": 6,
-            "title": "ROLE OF ARBITRATORS IN LEGITIMACY AND EFFICIENY OF THE ARBITRAL PROCESS",
-            "image": "images/article6.jpg",
-            "content": "wqijbhubcqhebj"
-        },
-        {
-            "id": 7,
-            "title": "CHIEF JUSTICE MENON ARBITRATION",
-            "image": "images/article7.jpg",
-            "content": "wqijbhubcqhebj"
-        }
-        
-    ]
+                        Herein, although the latest ICC Arbitration Rules 2021, stipulate factors such as impact of the joinder of third-party on the arbitration procedure, but does not emphasise the mandate of consent of the other parties involved. Therefore, it is essential to protect and uphold the principle of party autonomy for the effective conduct of arbitration. ",
+  },
+  {
+    id: 3,
+    title: "LAW GOVERNING THE ARBITRATION CLAUSE",
+    image: "images/article3.jpg",
+    content: "wqijbhubcqhebj",
+  },
+  {
+    id: 4,
+    title:
+      "THE IBA RULES ON THE TAKING OF EVIDENCE AND RULES OF ARBITRAL INSTITUTIONS ON DOCUMENT PRODUCTION, EXPERT WITNESS AND FACTUAL WITNESS",
+    image: "images/article4.jpg",
+    content: "wqijbhubcqhebj",
+  },
+  {
+    id: 5,
+    title: "ARBITRATBILITY OF DISPUTES",
+    image: "images/article5.jpg",
+    content: " ",
+  },
+  {
+    id: 6,
+    title:
+      "ROLE OF ARBITRATORS IN LEGITIMACY AND EFFICIENY OF THE ARBITRAL PROCESS",
+    image: "images/article6.jpg",
+    content:
+      " <h6><b>Arbitrators have a central role in ensuring the legitimacy and efficiency of the arbitration process. However, they are also largely unregulated. Critically discuss this statement in light of the following questions and provide reasoned responses:</b></h6> \
+                \
+                <ol> \
+                <li>Arbitrators have a contract with the disputing parties and/or the arbitral institution that has appointed them. </li> \
+                <li>Arbitration rules and laws and codes of conduct provide a regulatory framework for arbitrators. However, soft law rules (such as the IBA Guidelines on Conflicts of Interest) may not always provide an adequate framework. </li> \
+                <li>Independence and impartiality are the most important legal duty of arbitrators. To what extent should there be a balance between arbitrator’s duty of disclosure and disputing parties’ duty to investigate potential conflicts at the time of appointment of arbitrators? © Queen Mary, University of London, 2024 Page 2 SOLM044 (2024).</li> \
+                <li>The UK Supreme Court decision on Haliburton v Chubb may work well in the English context but it is not a decision consistent with international arbitration practice. </li> \
+            \
+            <h7>INTRODUCTION</h7> \
+            <p></p> \
+                ",
+  },
+  {
+    id: 7,
+    title: "CHIEF JUSTICE MENON ARBITRATION",
+    image: "images/article7.jpg",
+    content: "wqijbhubcqhebj",
+  },
+];
