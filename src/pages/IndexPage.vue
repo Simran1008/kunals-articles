@@ -1,35 +1,28 @@
 <template>
-  <q-page>
-    <div class="q-pa-md">
-      <q-img
-        src="images/homepic.jpeg"
-        class="q-responsive"
-        style="max-height: 500px"
-        alt="Sample Image"
-      />
+  <q-page class="q-pa-md">
+    <!-- Hero Image -->
+    <div class="hero-container">
+      <q-img src="images/homepic.jpeg" class="hero-image" alt="Sample Image" />
     </div>
 
-    <div class="container q-pa-md row justify-center q-gutter-lg">
-      <q-list v-for="article in articles" :key="article.id">
-        <q-item>
-          <q-item-section>
-            <q-card
-              class="my-card cursor-pointer"
-              clickable
-              @click="goToArticle(article.id)"
-            >
-              <q-img
-                :src="article.image"
-                :alt="article.title"
-                class="card-image"
-              />
-              <q-card-section class="card-content">
-                <div class="text">{{ article.title }}</div>
-              </q-card-section>
-            </q-card>
-          </q-item-section>
-        </q-item>
-      </q-list>
+    <!-- Article Cards -->
+    <div class="articles-container row justify-center q-gutter-md">
+      <q-card
+        v-for="article in articles"
+        :key="article.id"
+        class="article-card cursor-pointer"
+        clickable
+        @click="goToArticle(article.id)"
+      >
+        <q-img
+          :src="article.image"
+          :alt="article.title"
+          class="article-image"
+        />
+        <q-card-section class="article-content">
+          <div class="article-title">{{ article.title }}</div>
+        </q-card-section>
+      </q-card>
     </div>
   </q-page>
 </template>
@@ -52,70 +45,80 @@ export default {
 </script>
 
 <style scoped>
-/* Flex container to align cards properly */
-.container {
+/* Hero Image Section */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Article Cards */
+.articles-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
+  gap: 20px;
 }
 
-/* Ensure all cards have the same size */
-.my-card {
-  width: 350px;
-  height: 400px; /* Fixed height */
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease;
+/* Card Styling */
+.article-card {
+  width: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
 }
 
-.my-card:hover {
-  transform: scale(1.05);
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Ensure all images inside cards have the same size */
-.card-image {
+/* Image Styling */
+.article-image {
   width: 100%;
-  height: 250px; /* Fixed height */
-  object-fit: cover; /* Prevents distortion */
+  height: 200px;
+  object-fit: cover;
 }
 
-/* Card content section with uniform spacing */
-.card-content {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Article Content */
+.article-content {
+  padding: 15px;
   text-align: center;
 }
 
-/* Title text styling */
-.text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
-  font-weight: 300;
+.article-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .my-card {
-    width: 300px;
-    height: 370px;
+  .article-card {
+    width: 280px;
   }
 
-  .card-image {
-    height: 220px;
+  .hero-image {
+    max-height: 350px;
   }
 }
 
 @media (max-width: 500px) {
-  .my-card {
-    width: 280px;
-    height: 350px;
+  .article-card {
+    width: 260px;
   }
 
-  .card-image {
-    height: 200px;
+  .hero-image {
+    max-height: 280px;
   }
 }
 </style>

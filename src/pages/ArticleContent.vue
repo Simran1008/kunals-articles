@@ -5,25 +5,19 @@
       <q-btn
         icon="arrow_back"
         label="Back to Articles"
-        flat
         class="back-button"
+        unelevated
         @click="goBack"
       />
 
-      <q-card class="my-card" flat bordered>
+      <q-card class="article-card">
         <!-- Article Image -->
-        <q-card-section class="image-container">
-          <q-img :src="article.image" class="article-image" />
-        </q-card-section>
-
-        <!-- Article Title -->
-        <q-card-section class="title-section">
-          <div class="text-h5">{{ article.title }}</div>
-        </q-card-section>
+        <q-img :src="article.image" class="article-image" />
 
         <!-- Article Content -->
-        <q-card-section class="content-section">
-          <p v-html="article.content"></p>
+        <q-card-section class="article-content">
+          <div class="article-title">{{ article.title }}</div>
+          <div class="article-text" v-html="article.content"></div>
         </q-card-section>
       </q-card>
     </div>
@@ -43,73 +37,92 @@ export default {
   },
   methods: {
     goBack() {
-      this.$router.push("/"); // Navigates back to IndexPage.vue
+      this.$router.push("/"); // Navigates back to the home page
     },
   },
 };
 </script>
 
 <style scoped>
+/* Page Container */
 .container {
   max-width: 1300px;
   width: 100%;
   padding: 20px;
 }
 
+/* Back Button */
 .back-button {
-  margin-bottom: 15px;
-  font-size: larger;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
 }
 
-.my-card {
-  border-radius: 15px;
+/* Card Styling */
+.article-card {
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  transition: 0.3s ease;
 }
 
-.image-container {
-  text-align: center;
-  padding: 15px;
+.article-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Image */
 .article-image {
-  max-width: 90%;
-  height: auto;
-  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
-.title-section {
-  text-align: center;
-  background-color: #e6c8a5;
-  padding: 15px;
-  font-weight: bold;
-}
-
-.content-section {
-  text-align: justify;
+/* Content */
+.article-content {
   padding: 25px;
-  border: 1px solid grey;
-  margin: 15px;
-  border-radius: 15px;
-  background-color: #faf5f0;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.article-text {
   font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  background-color: #faf5f0;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
   .container {
-    padding: 10px;
+    padding: 15px;
   }
 
-  .content-section {
-    padding: 15px;
+  .article-image {
+    height: 250px;
+  }
+
+  .article-title {
+    font-size: 1.3rem;
+  }
+
+  .article-text {
     font-size: 16px;
+    padding: 15px;
   }
 
   .back-button {
     width: 100%;
-    text-align: center;
   }
 }
 </style>
