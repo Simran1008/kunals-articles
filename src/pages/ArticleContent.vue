@@ -18,6 +18,7 @@
         <q-card-section class="article-content">
           <div class="article-title">{{ article.title }}</div>
           <div class="article-text" v-html="article.content"></div>
+          <div class="article-footnotes" v-html="article.footnotes"></div>
         </q-card-section>
       </q-card>
     </div>
@@ -100,6 +101,24 @@ export default {
   background-color: #faf5f0;
   padding: 20px;
   border-radius: 8px;
+}
+
+.article-footnotes {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f4f4f4; /* Purple accent for style */
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  font-family: "Georgia", serif;
+}
+
+.article-footnotes sup {
+  font-weight: bold;
+  font-size: 12px;
+  vertical-align: top;
+  margin-right: 4px;
 }
 
 /* Responsive Design */
