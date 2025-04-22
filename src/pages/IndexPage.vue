@@ -188,7 +188,6 @@ export default {
 .article-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #3f2e21;
   font-family: "Poppins", sans-serif;
 }
 

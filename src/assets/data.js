@@ -202,7 +202,7 @@ export const articles = [
   //----------------------------------------------------------------
   {
     id: 5,
-    title: "ARBITRATBILITY OF DISPUTES",
+    title: "ARBITRABILITY OF DISPUTES",
     image: "images/article5.jpg",
     content:
       " \
@@ -282,7 +282,8 @@ export const articles = [
   //---------------------------------------------------------------------------
   {
     id: 7,
-    title: "CHIEF JUSTICE MENON ARBITRATION",
+    title:
+      "CHIEF JUSTICE SUNDARESH MENON ON ARBITRATION AS A FAVOURED ROLE DISPUTE RESOLUTION",
     image: "images/article7.jpg",
     content:
       " \
